@@ -1,0 +1,393 @@
+/* print.css */
+/*--------------------------------------*/
+
+
+html,body {
+    height:100%;
+}
+
+
+html {
+    overflow-y:scroll;
+}
+
+body {
+    background:#FFFFFF;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    font-family:"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size:10pt;
+    line-height:1.4;
+    color:#000000;
+}
+
+/* for WinIE6 */
+/*--------------------------------------*/
+* html body {
+    vertical-align:baseline;
+    font-size:75%;
+    letter-spacing:1px;
+}
+
+/* for WinIE7 */
+/*--------------------------------------*/
+*:first-child+html body {
+    font-size:75%;
+}
+
+
+/* clearfix */
+/*--------------------------------------*/
+.clearfix:after {
+    clear:both;
+    display:block;
+    visibility:hidden;
+    content:" ";
+    height:0;
+    font-size:0;
+}
+
+/* IE6 */
+* html .clearfix {
+    zoom:1;
+}
+
+/* IE7 */
+*:first-child+html .clearfix {
+    zoom:1;
+}
+/*--------------------------------------*/
+
+
+
+/* wrapper & main */
+/*--------------------------------------*/
+
+#wrapper {
+    width:640px;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    font-size:0.9em;
+}
+
+#wrapper {
+}
+
+#main {
+    overflow:auto;
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    text-align:left;
+}
+
+/* footer */
+/*--------------------------------------*/
+
+#footer {
+    clear:both;
+    position:relative;
+    height:auto;
+    width:640px;
+    margin:0 auto;
+    padding:0;;
+    font-size:0.9em;
+}
+
+
+
+/* header */
+/*--------------------------------------*/
+
+#header {
+    position:relative;
+    width:100%;
+    margin:0 auto 5px;
+    padding:5px 0;
+    text-align:center;
+}
+
+.page_feed {
+    padding-top:2em;
+    page-break-before:always;
+}
+
+h1 {
+    display:inline-block;
+    clear:both;
+    margin:0;
+    padding:0 1em;
+    border-bottom:3px double #000;
+    font-size:1.8em;
+}
+h2 {
+    margin-bottom:0;
+    font-size:1.1em;
+}
+
+
+.center {text-align:center !important;}
+.right {text-align:right !important;}
+.eol {margin-bottom:2em !important;}
+.red {color:#ff0000;}
+.nowrap {white-space: nowrap;}
+
+table.date {
+    position:absolute;
+    top:0;
+    right:0;
+    margin:0;
+    padding:0;
+    text-align:left;
+}
+table.date th,table.date td {
+    padding:0;
+}
+table.date th {
+    font-weight:normal;
+}
+
+
+/* client */
+.client_add {
+    margin-bottom:0.5em;
+}
+.client_name {
+    display:inline-block;
+    max-width:20em;
+    margin-bottom:0.5em;
+    padding:0;
+    border-bottom:2px solid #000;
+    text-align:left;
+    font-size:1.2em;
+    font-weight:bold;
+}
+.client_country {
+    margin-bottom:1em;
+    font-size:0.9em;
+}
+
+
+/* info */
+table.info {
+    float:left;
+    width:48%;
+    margin-bottom:0.5em;
+    border-spacing:0;
+}
+table.info th,table.info td {
+    padding:0.5em 0 0;
+    border-bottom:1px solid #000;
+    vertical-align:top;
+}
+table.info th {
+    font-weight:normal;
+}
+
+/* address */
+.address {
+    position:relative;
+    float:right;
+    padding-top:1.5em;
+    line-height:1.6;
+}
+.address .stamp {
+    position:absolute;
+    top:-40px;
+    right:0;
+}
+
+#main p {
+    margin:0 0 0.5em;
+    padding:0;
+}
+
+
+/* detail */
+table.detail {
+    width:100%;
+    margin-bottom:1.0em;
+    border-spacing:0;
+    border-top:1px solid #000;
+    border-left:1px solid #000;
+}
+table.detail th,table.detail td {
+    padding:0.3em;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+    vertical-align:top;
+}
+table.detail tr.total th,table.detail tr.total td {
+    border-top:1px double #000;
+    font-size:1.2em;
+}
+table.detail th {
+    text-align:center;
+    font-weight:bold;
+}
+table.detail th.item {
+    width:76%;
+}
+table.detail td {
+    text-align:right;
+}
+table.detail td.item {
+    text-align:left;
+}
+
+/* total */
+table.total {
+    width:100%;
+    margin-bottom:0.5em;
+    border-spacing:0;
+    border:3px double #000;
+}
+table.total th,table.total td {
+    padding:0.3em;
+    border-right:1px solid #000;
+}
+table.total th {
+    width:9em;
+    text-align:center;
+    font-weight:bold;
+}
+table.total td {
+    text-align:right;
+}
+table.total td:last-child {
+    border-right:none;
+}
+
+
+
+/* note */
+h3 {
+    margin:0;
+    text-align:left;
+    font-size:1.0em;
+    font-weight:normal;
+}
+
+ul.note {
+    margin:0 0 0.5em;
+    padding:0 0 0 1.5em;
+    text-align:left;
+}
+ul.note li {
+}
+
+#footer p {
+    margin:0;
+    text-align:left;
+}
+
+.payee {
+    margin:0 auto;
+    padding:0.5em 2em;
+    border:3px double #000;
+}
+.payee dl {
+    margin:0;
+    padding:0;
+    text-align:left;
+}
+.payee dt {
+    float:left;
+    width:6em;
+}
+.payee dd {
+    margin-left:6em;
+}
+
+
+
+
+/* detail2 */
+table.detail2 {
+    width:100%;
+    margin-bottom:1.0em;
+    border-spacing:0;
+    border-top:1px solid #000;
+    border-left:1px solid #000;
+}
+table.detail2 th,table.detail2 td {
+    padding:0.3em;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+    vertical-align:top;
+}
+table.detail2 th {
+    text-align:center;
+    font-weight:bold;
+}
+
+/* trademark info */
+table.tm_info {
+    width:100%;
+    margin-bottom:2.0em;
+    border-spacing:0;
+    border-top:1px solid #000;
+    border-left:1px solid #000;
+}
+table.tm_info th,table.tm_info td {
+    padding:0.3em;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+    vertical-align:top;
+}
+table.tm_info th {
+    width:8em;
+    font-weight:normal;
+}
+
+/* receipt */
+table.receipt {
+    width:70%;
+    margin:0 auto 1em;
+    border-spacing:0;
+    border-bottom:3px double #000;
+}
+table.receipt th,table.receipt td {
+    padding:0.3em;
+    vertical-align:top;
+    white-space:nowrap;
+}
+table.receipt th {
+    vertical-align:bottom;
+    font-weight:normal;
+}
+table.receipt td {
+    width:70%;
+    text-align:center;
+    font-size:1.8em;
+    font-weight:bold;
+}
+
+table.receipt_date {
+    width:70%;
+    margin:0 auto 2em;
+    border-spacing:0;
+}
+table.receipt_date th,table.receipt_date td {
+    padding:0.3em;
+    vertical-align:top;
+    white-space:nowrap;
+}
+table.receipt_date th {
+    width:4em;
+    text-align:left;
+    font-weight:normal;
+}
+table.receipt_date td {
+    text-align:left;
+}
+table.receipt_date span {
+    display:block;
+    padding-top:0.75em;
+}
+
+[hidden] {
+    display: none !important;
+}

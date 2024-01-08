@@ -1,0 +1,460 @@
+/* button for href */
+a.btn_a {
+    display:inline-block;
+    background:#cccccc;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#000000;
+}
+a.btn_a:hover {
+    background:#ceddeb;
+    color:#00233a;
+}
+
+a.btn_b {
+    display:inline-block;
+    background:#359ce0;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+}
+a.btn_b:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+}
+
+a.hoverCB:hover {
+    color:#000000;
+    border:1px solid #aaaaaa;
+}
+
+a.btn_c {
+    display:inline-block;
+    background:#39a03e;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+}
+a.btn_c:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+}
+
+a.btn_d {
+    display:inline-block;
+    background:#ff0000;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+}
+a.btn_d:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+}
+
+a.btn_e {
+    display:inline-block;
+    background:#fb8800;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+}
+a.btn_e:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+}
+
+a.btn_f {
+    display:inline-block;
+    background:#78BDEB;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+}
+a.btn_f:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+}
+
+.line2 {
+    width:12em;
+    height:6em;
+}
+
+
+
+/* button for input[type="submit"] */
+
+input[type="submit"].btn_a,
+input[type="button"].btn_a,
+input[type="reset"].btn_a,
+button.btn_a,
+a.btn_custom {
+    display:inline-block;
+    background:#cccccc;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#000000;
+    cursor:pointer;
+}
+input[type="submit"].btn_a:hover,
+input[type="button"].btn_a:hover,
+input[type="reset"].btn_a:hover,
+button.btn_a:hover {
+    background:#ceddeb;
+    color:#00233a;
+}
+
+input[type="submit"].btn_b,
+input[type="button"].btn_b,
+input[type="reset"].btn_b,
+button.btn_b {
+    display:inline-block;
+    background:#359ce0;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+    cursor:pointer;
+}
+input[type="submit"].btn_b:hover,
+input[type="button"].btn_b:hover,
+input[type="reset"].btn_b:hover,
+button.btn_b:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+    color:#000000;
+}
+
+input[type="submit"].btn_c,
+input[type="button"].btn_c,
+input[type="reset"].btn_c,
+button.btn_c {
+    display:inline-block;
+    background:#39a03e;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+    cursor:pointer;
+}
+input[type="submit"].btn_c:hover,
+input[type="button"].btn_c:hover,
+input[type="reset"].btn_c:hover,
+button.btn_c:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+    color:#000000;
+}
+
+input[type="submit"].btn_d,
+input[type="button"].btn_d,
+input[type="reset"].btn_d,
+button.btn_d {
+    display:inline-block;
+    background:#ff0000;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+    cursor:pointer;
+}
+input[type="submit"].btn_d:hover,
+input[type="button"].btn_d:hover,
+input[type="reset"].btn_d:hover,
+button.btn_c:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+    color:#000000;
+}
+
+input[type="submit"].btn_e,
+input[type="button"].btn_e,
+input[type="reset"].btn_e,
+button[type="submit"].btn_e,
+button.btn_e {
+    display:inline-block;
+    background:#fb8800;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+    cursor:pointer;
+}
+input[type="submit"].btn_e:hover,
+input[type="button"].btn_e:hover,
+input[type="reset"].btn_e:hover,
+button.btn_e:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+    color:#000000;
+}
+
+input[type="submit"].btn_f,
+input[type="button"].btn_f,
+input[type="reset"].btn_f,
+button.btn_f {
+    display:inline-block;
+    background:#78BDEB;
+    padding:5px 2em;
+    border:1px solid #999999;
+    border-radius:5px;
+    text-decoration:none;
+    color:#ffffff;
+    cursor:pointer;
+}
+input[type="submit"].btn_f:hover,
+input[type="button"].btn_f:hover,
+input[type="reset"].btn_f:hover,
+button.btn_F:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+    color:#ffffff;
+}
+
+
+
+ul.footerBtn input[type="submit"],
+ul.footerBtn button[type="submit"]{
+    font-size:1.3em;
+}
+ul.footerBtn input[type="submit"].big,
+ul.footerBtn button[type="submit"].big{
+    font-size:1.6em;
+}
+
+ul.footerBtn input[type="button"] {
+    font-size:1.3em;
+}
+ul.footerBtn input[type="button"].big {
+    font-size:1.6em;
+}
+
+input[type="submit"].btn_a.small,
+input[type="button"].btn_a.small,
+input[type="reset"].btn_a.small,
+button.btn_a.small {
+    padding:2px 1em;
+    font-size:0.7em;
+}
+
+input[type="submit"].btn_b.small,
+input[type="button"].btn_b.small,
+input[type="reset"].btn_b.small,
+button.btn_b.small {
+    padding:2px 1em;
+    font-size:0.7em;
+}
+
+input[type="submit"].btn_c.small,
+input[type="button"].btn_c.small,
+input[type="reset"].btn_c.small,
+button.btn_c.small {
+    padding:2px 1em;
+    font-size:0.7em;
+}
+
+input[type="submit"].btn_d.small,
+input[type="button"].btn_d.small,
+input[type="reset"].btn_d.small,
+button.btn_d.small {
+    padding:2px 1em;
+    font-size:0.7em;
+}
+
+
+/* for rightBox */
+.rightBox input[type="submit"].btn_e,
+.rightBox input[type="button"].btn_e,
+.rightBox input[type="reset"].btn_e,
+.rightBox button.btn_e {
+    padding:5px 15px;
+}
+
+
+
+/* button center float */
+ul.btn_center {
+    text-align:center;
+}
+ul.btn_center li {
+    display:inline-block;
+    margin:0 0.2em;
+}
+
+/* button left float */
+ul.btn_left {
+    text-align:left;
+}
+ul.btn_left li {
+    display:inline-block;
+    margin:0 0.2em;
+}
+
+
+
+
+/* unipue */
+
+
+ul.btn3 {
+    margin-bottom:40px;
+    text-align:center;
+}
+ul.btn3 li {
+    display:inline-block;
+    margin-left:1em;
+}
+ul.btn3 li a {
+    display:inline-block;
+    border-radius:5px;
+    border:1px solid #999999;
+    text-decoration:none;
+    font-size:1.3em;
+    color:#000000;
+}
+ul.btn3 li a.btn_a {
+    background:#cccccc;
+    padding:0.5em 2em;
+}
+ul.btn3 li a.btn_b {
+    background:#359ce0;
+    padding:0.5em 2em;
+}
+ul.btn3 li a.btn_c {
+    background:#39a03e;
+    padding:0.5em 2em;
+}
+ul.btn3 li a.btn_d {
+    background:#ff0000;
+    padding:0.5em 2em;
+}
+ul.btn3 li a:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+}
+
+
+
+
+li.changelog {
+    float:left;
+    margin-bottom:30px;
+}
+
+li.addclass {
+    float:right;
+    margin-bottom:30px;
+}
+
+
+ul.footerBtn {
+    margin-bottom:1em;
+    text-align:left;
+}
+ul.footerBtn li {
+    display:inline-block;
+    margin-right:1em;
+}
+ul.footerBtn li:last-child {
+    margin-right:0;
+}
+ul.footerBtn li a {
+    display:inline-block;
+    border-radius:5px;
+    border:1px solid #999999;
+    text-decoration:none;
+    font-size:1.3em;
+    color:#000000;
+}
+ul.footerBtn li a.btn_a {
+    background:#cccccc;
+    padding:0.5em 4.5em;
+}
+ul.footerBtn li a.btn_b {
+    background:#359ce0;
+    padding:0.5em 4.5em;
+}
+ul.footerBtn li a.btn_c {
+    background:#82c579;
+    padding:0.5em 2em;
+}
+ul.footerBtn li a.btn_d {
+    background:#ff0000;
+    padding:0.5em 2em;
+}
+ul.footerBtn li a:hover {
+    background:#ceddeb;
+    border:1px solid #aaaaaa;
+}
+ul.footerBtn.right {
+    text-align:right;
+}
+
+
+ul.footerBtn2 {
+    margin-bottom:3em;
+    text-align:left;
+}
+ul.footerBtn2 li {
+    display:block;
+    margin-bottom:1em;
+}
+ul.footerBtn2 li input {
+    display:inline-block;
+    border-radius:5px;
+    border:1px solid #999999;
+    text-decoration:none;
+    font-size:1.3em;
+    color:#000000;
+}
+
+
+/* col2 */
+.col2 ul.footerBtn input[type="submit"] {
+    font-size:1.1em;
+}
+.col2 ul.footerBtn input[type="button"] {
+    font-size:1.1em;
+}
+
+
+/* float button fot u20b */
+.float_btn {
+    position:fixed;
+    width:30%;
+    text-align:right;
+}
+
+/* custom button a go to page anken-top (u011) */
+ul.footerBtn li a.btn_go_to_ankentop {
+    display: inline-block;
+    background: #cccccc;
+    padding: 5px 2em;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+

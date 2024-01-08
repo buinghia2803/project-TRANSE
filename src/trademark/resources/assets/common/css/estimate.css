@@ -1,0 +1,95 @@
+/* estimate box */
+.estimateBox {
+    position: fixed;
+    top: 90px;
+    right: 1%;
+    width: 94%;
+    max-width: 400px;
+    margin-left: auto;
+    z-index: 1000;
+}
+.estimateBox table {
+    width: 100%;
+}
+
+.estimateBox  input {
+    display: none;
+}
+.estimateBox label.button {
+    position: relative;
+    float:right;
+    display: inline-block;
+    background-color: #2bbb04;
+    background-repeat: no-repeat;
+    background-position: left 1em center;
+    background-image: url("../images/icon_cart.svg");
+    background-size: 1.4em;
+    padding: 0.75em 1em 0.75em 3em;
+    border-top:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size:1.1em;
+    color:#ffffff;
+    transition: .3s all ease;
+}
+.estimateBox label.button:hover {
+    background-color: #50d02e;
+    cursor: pointer;
+}
+.estimateBox label.button span.open {padding-right: 1em;}
+.estimateBox label.button span.close {display: none;}
+
+.estimateBox input:checked ~ label.button {
+    border-bottom:0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 1300;
+}
+.estimateBox input:checked ~ label.button span.open {display: none;}
+.estimateBox input:checked ~ label.button span.close {display: block;}
+
+
+
+.estimateContents {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: .3s all ease;
+}
+.estimateBox input:checked ~ .estimateContents {
+    visibility: visible;
+    overflow-y: auto;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    background-color: #ffffff;
+    padding: 3%;
+    border:1px solid #cccccc;
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.6);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

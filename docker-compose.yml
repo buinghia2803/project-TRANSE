@@ -1,0 +1,76 @@
+version: '3.3'
+services:
+    workspace:
+        container_name: ${CONTAINER_NAME_SCHEMA}-workspace
+        build: ./docker/workspace
+        restart: always
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./src/${REPO_NAME}:/www
+        working_dir: /www
+        depends_on:
+            - mysql
+        networks:
+            - ${NETWORK}
+
+    nginx:
+        container_name: ${CONTAINER_NAME_SCHEMA}-nginx
+        build: ./docker/nginx
+        restart: always
+        ports:
+            - ${APP_PORT}:80
+        volumes:
+            - ./src/${REPO_NAME}:/www
+            - ./docker/nginx/.htpasswd:/etc/nginx/.htpasswd
+            - ./docker/nginx/conf.d:/etc/nginx/conf.d
+            - ./docker/nginx/logs:/var/logs/nginx
+            - ./docker/nginx/ssl:/etc/nginx/ssl
+        command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+        depends_on:
+            - php-fpm
+        networks:
+            - ${NETWORK}
+
+    php-fpm:
+        image: bitnami/php-fpm:7.4.30-debian-11-r5
+        container_name: ${CONTAINER_NAME_SCHEMA}-php-fpm
+        volumes:
+            - ./src/${REPO_NAME}:/www
+            - ./docker/php-fpm/conf.d/app.ini:/opt/bitnami/php/etc/conf.d/app.ini
+        restart: always
+        networks:
+            - ${NETWORK}
+
+    mysql:
+        image: mysql:8.0
+        container_name: ${CONTAINER_NAME_SCHEMA}-mysql
+        restart: always
+        environment:
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+        ports:
+            - ${DB_PORT}:3306
+        volumes:
+            - ./docker/mysql/data:/var/lib/mysql
+            - ./docker/mysql/logs:/var/logs/mysql
+        networks:
+            - ${NETWORK}
+
+    mailhog:
+        image: mailhog/mailhog
+        container_name: ${CONTAINER_NAME_SCHEMA}-mailhog
+        restart: always
+        logging:
+            driver: 'none'
+        ports:
+            - ${MAILHOG_PORT}:8025
+            - ${MAILHOG_PORT_SMTP}:1025
+        networks:
+            - ${NETWORK}
+
+networks:
+    trademark:
+
+volumes:
+    workspace:

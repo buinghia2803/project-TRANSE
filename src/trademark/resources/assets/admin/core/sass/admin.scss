@@ -1,0 +1,87 @@
+// @import '../../../common/css/cssreset.css';
+@import '../../../common/css/base.css';
+@import '../../../common/css/btn.css';
+@import '../../../common/css/contents.css';
+@import '../../../common/css/estimate.css';
+@import '../../../common/css/form.css';
+@import '../../../common/css/scroll-hint.css';
+@import '../../../common/css/table.css';
+
+.error-valid, .error{
+    margin-top: 5px;
+    color: #f50d0d;
+    font-size: 13px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.w-100 {
+    width: 100px;
+}
+.select_agent {
+    min-width: 164px;
+    max-width: 220px;
+}
+.el_input_name {
+    min-width: 168px;
+}
+.item_select_agent {
+    max-width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gonna_dairinin {
+    min-width: 183px;
+    min-height: 38px;
+}
+.border_red {
+    border-color: red;
+}
+.estimateBox input {
+    display: none;
+}
+.sp_select_agent {
+    position: relative;
+}
+
+input[type="submit"]:disabled {
+    background: #ceddeb;
+    border: 1px solid #aaaaaa;
+    color: #000000
+}
+span.select-group-box {
+    margin-bottom: 1.5rem;
+}
+.text-center {
+    text-align: center !important;
+}
+.align-item-center {
+    text-align: center;
+}
+
+@media (min-width: 1366px) {
+    .refusal_response_plan__product_group {
+        width: 1366px;
+        overflow-x: auto;
+        width: 100%;
+    }
+}

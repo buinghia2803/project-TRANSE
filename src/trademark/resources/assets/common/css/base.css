@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* base.css */
+/*--------------------------------------*/
+
+
+html,body {
+    height:100%;
+}
+
+html {
+    overflow-y:scroll;
+}
+
+body {
+    position: relative;
+    /*background-color:#ffffff;*/
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    font-family:'Noto Sans JP', "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+    line-height:1.6;
+    font-size:62.5%;
+    color:#000000;
+    -webkit-text-size-adjust:100%;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* clearfix */
+/*--------------------------------------*/
+.clearfix:after {
+    clear:both;
+    display:block;
+    visibility:hidden;
+    content:" ";
+    height:0;
+    font-size:0;
+}
+
+/* IE6 */
+* html .clearfix {
+    zoom:1;
+}
+
+/* IE7 */
+*:first-child+html .clearfix {
+    zoom:1;
+    }
+/*--------------------------------------*/
+
+
+/* text link color */
+/*--------------------------------------*/
+
+a:link    {color:#00233a; text-decoration:underline;}
+a:visited {color:#00233a; text-decoration:underline;}
+a:hover   {color:#359ce0; text-decoration:none;}
+a:active  {color:#359ce0; text-decoration:none;}
+
+#wrapper a:hover img {
+    -ms-filter:"alpha( opacity=70 )";
+    filter:alpha(opacity=70);
+    opacity:0.7;
+}
+
+strong {
+    font-weight:bold;
+}
+
+
+/* wrapper */
+/*--------------------------------------*/
+
+#wrapper {
+    width:100%;
+    min-height:calc(100% - 41px);
+    /*background-color:#ffffff;*/
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    font-size:1.4em;
+}
+
+#wrapper img {
+    /*display:block;*/
+    margin:auto;
+}
+
+
+
+/* header */
+/*--------------------------------------*/
+
+#header {
+    position: relative;
+    width:100%;
+    margin: 0 auto;
+    padding:0;
+    border-bottom:1px solid #cccccc;
+    text-align:center;
+}
+
+#headerInner {
+    position: relative;
+    width:98%;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+#headerInner h1 {
+    float:left;
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size:1.4em;
+}
+
+
+.admin #header {
+    margin:0 auto 20px;
+}
+.admin #header h1 {
+    float:none;
+}
+
+.admin #headerInner {
+}
+.user #header {
+    margin:0 auto 10px;
+}
+
+.admin #headerInner h1 {
+}
+
+#headerInner h1 span {
+    display: block;
+    margin-bottom: 3px;
+    line-height: 1.4;
+    font-size:0.6em;
+}
+
+#headerInner h1 img {
+    display:inline-block;
+    max-width:100%;
+    height:auto;
+}
+
+
+/* main navigation */
+/*--------------------------------------*/
+.admin ul#navigation {
+    position: static;
+    padding-bottom:10px;
+    text-align: left;
+}
+.user ul#navigation {
+    position:absolute;
+    bottom:10px;
+    right:2%;
+    text-align: right;
+}
+
+ul#navigation {
+    letter-spacing: -0.5em;
+}
+ul#navigation li {
+    display:inline-block;
+    margin:0 3px 0 0;
+    vertical-align:middle;
+    text-align:center;
+    letter-spacing: normal;
+}
+ul#navigation li:last-child {
+    margin:0;
+    border-right:none;
+}
+
+ul#navigation li a {
+    display: block;
+    padding: 0 1em;
+    text-decoration:none;
+}
+ul#navigation li a:hover {
+}
+
+.admin ul#navigation li a {
+    background-color: #fb6b39;
+    border-radius: 6px;
+    color:#ffffff;
+}
+.admin ul#navigation li a:hover {
+    background-color: #f4a083;
+}
+
+.user ul#navigation li a {
+    background-color: #0091ce;
+    color:#ffffff;
+}
+.user ul#navigation li a:hover {
+    background-color: #5ec0e9;
+}
+
+ul#navigation li a.logout {
+}
+.admin ul#navigation li a.logout {
+    margin-right: 1em;
+}
+
+.admin ul#navigation li input.logout {
+    margin-right: 1em;
+}
+
+.user ul#navigation li a.logout {
+    margin-left: 1em;
+}
+ul#navigation li a.logout {
+    background-color: #e90012;
+    color: #ffffff;
+}
+ul#navigation li a.logout:hover {
+    background-color: #fe9090;
+}
+.admin ul#navigation li input.logout {
+    background-color: #e90012;
+    color: #ffffff;
+    border: none;
+    padding: 1.5px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.admin ul#navigation li input.logout:hover {
+    background-color: #fe9090;
+}
+
+/* user navigation */
+/*--------------------------------------*/
+/* burger menu */
+#toggle {
+    display:block;
+    position:absolute;
+    top:0;
+    right:3%;
+    bottom:0;
+    width:46px;
+    height:30px;
+    margin:auto;
+    cursor:pointer;
+}
+#toggle,
+#toggle span {
+    display:inline-block;
+    transition:transform .3s ease-in;
+}
+#toggle div {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+#toggle span.text {
+    padding-top: 0.5em;
+    font-size: 12px;
+}
+#toggle div > span {
+    position:absolute;
+    left:0;
+    width:100%;
+    height:4px;
+    background-color:#0091ce;
+}
+#toggle div > span:nth-of-type(1) {
+    top:0;
+}
+#toggle div > span:nth-of-type(2) {
+    top:13px;
+}
+#toggle div > span:nth-of-type(3) {
+    bottom:0;
+}
+
+
+/* #toggle animation */
+.open #toggle {
+    z-index:1002;
+}
+.open #toggle div > span {
+}
+.open #toggle span.text {
+}
+.open #toggle div > span:nth-of-type(1) {
+  -webkit-transform:translateY(13px) rotate(-45deg);
+  transform:translateY(13px) rotate(-45deg);
+}
+.open #toggle div > span:nth-of-type(2) {
+  opacity:0;
+}
+.open #toggle div > span:nth-of-type(3) {
+  -webkit-transform:translateY(-13px) rotate(45deg);
+  transform:translateY(-13px) rotate(45deg);
+}
+
+
+body.fixed-body {
+    overflow-y:hidden;
+}
+
+#navigation-user nav {
+    visibility:hidden;
+    overflow-y:auto;
+    position:absolute;
+    top:0;
+    right:-18em;
+    width: 0;
+    height:100vh;
+    background-color:#aaddff;
+    z-index:1001;
+    transition:all .5s ease;
+}
+/* slide down */
+.open {
+    overflow-x: hidden;
+}
+.open #navigation-user nav {
+    visibility:visible;
+    right:0;
+    width:18em;
+}
+
+
+/* global navigation */
+#navigation-user ul {
+    padding-top:110px;
+}
+#navigation-user ul {
+    margin-bottom:5%;
+    text-align:left;
+}
+#navigation-user ul > li {
+    display:block;
+    width:100%;
+    margin:0;
+    padding:10px 20px;
+    border-left:0;
+    font-size:1.2em;
+}
+#navigation-user ul li:last-child {
+    margin-top: 1em;
+    border-right:0;
+}
+#navigation-user ul li a {
+    display:block;
+    width:100%;
+    background-color:#ffffff;
+    padding:0.5em 1em;
+    border-radius: 8px;
+    color:#000000;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+#navigation-user ul li input {
+    display:block;
+    width:100%;
+    background-color:#ffffff;
+    padding:0.5em 1em;
+    border-radius: 8px;
+    color:#000000;
+    text-decoration: none;
+    transition: all .3s ease;
+    text-align: left;
+    cursor: pointer;
+}
+
+#navigation-user ul li a:hover {
+    background-color: #c4c4c4;
+}
+
+#navigation-user ul li a.logout {
+    background-color: #e90012;
+    color: #ffffff;
+}
+#navigation-user ul li a.logout:hover {
+    background-color: #fe9090;
+}
+
+#navigation-user ul li input.logout {
+    background-color: #e90012;
+    color: #ffffff;
+    border: none;
+}
+
+#navigation-user ul li input.logout:hover {
+    background-color: #fe9090;
+}
+
+
+
+
+/* login user name */
+/*--------------------------------------*/
+#username {
+    margin-left:2%;
+    margin-bottom: 20px;
+    text-align:left;
+}
+#username ul {
+}
+#username ul li {
+    display:inline-block;
+    margin-right:1em;
+}
+#username ul li a {
+    display: block;
+    background-color: #0063a1;
+    padding: 0 1em;
+    border-radius: 6px;
+    color:#ffffff;
+    text-decoration:none;
+}
+#username ul li a:hover {
+    background-color: #4597cb;
+}
+#username ul li.login {
+    font-weight:bold;
+}
+
+
+/* member info */
+h5.membertitle {
+    margin-bottom: 0.5em;
+}
+h5.membertitle a {
+    display:inline-block;
+    background-color: #fb6b39;
+    padding: 0 1em;
+    border-radius: 6px;
+    color:#ffffff;
+    text-decoration: none;
+}
+h5.membertitle a:hover {
+    background-color: #f4a083;
+}
+ul.memberinfo {
+    margin-bottom:2em;
+}
+ul.memberinfo li {
+    display:inline-block;
+    margin-left:1em;
+}
+
+
+/* footer */
+/*--------------------------------------*/
+
+#footer {
+    clear:both;
+    position:relative;
+    width:100%;
+    height:40px;
+    margin:0 auto;
+    padding:0;
+    border-top:1px solid #cccccc;
+    line-height:40px;
+}
+
+#footerInner {
+    width:100%;
+    margin:0;
+    padding:0 2%;
+    text-align:left;
+}
+
+
+
+/* contents base */
+/*--------------------------------------*/
+#contents {
+    position: relative;
+    padding: 0 2% 10vh;
+    text-align:left;
+}
+
+.admin #contents {
+    /*width:1600px;*/
+    /*margin:0 auto;*/
+    margin:0;
+}
+
+.user #contents {
+    width:100%;
+    margin:0 auto;
+}
+
+.admin #contents.admin_wide {
+    /*width:2000px;*/
+}
+
+.admin #contents.admin_wide2 {
+    /*width:5800px;*/
+}
+
+.admin #contents.admin_wide3 {
+   /* width:4000px;*/
+}
+
+
+
+/* page top */
+/*--------------------------------------*/
+.pagetop {
+    display:none;
+    position:fixed;
+    bottom:4%;
+    right:1%;
+}
+.pagetop a {
+    display:block;
+    width:48px;
+    height:48px;
+    background:url("../images/page_top.png") no-repeat 0 0;
+    font-size:0.1em;
+    text-decoration:none;
+    text-indent:-9999px;
+    z-index: 999;
+}
+
+.break_text{
+    max-width: 28em;
+    word-break: break-all;
+    white-space: break-spaces;
+}
+
+dd {
+    min-height: 22px;
+}
+
+/* Module Loading */
+#loading_box {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.6);
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 100000;
+   opacity: 0;
+   visibility: hidden;
+}
+
+#loading_image {
+    width: 100%;
+    height: 100%;
+}
+.color_notice_management{
+    background-color: #f1b5d0;
+}
+.color_notice_expired{
+    background-color: #E4EABF;
+}

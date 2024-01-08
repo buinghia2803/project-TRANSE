@@ -1,0 +1,45 @@
+.iframe-common {
+    position: relative;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    overflow-y: scroll;
+    width: 49%;
+    height: 800px;
+    margin: 3px;
+    overflow-x: hidden;
+    display: inline-block;
+}
+
+.iframe-common > div {
+    min-height: 100%;
+    position: relative;
+}
+
+.pagetop-custom a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(/images/page_top.png?cd13ac4…) no-repeat 0 0;
+    font-size: 0.1em;
+    text-decoration: none;
+    text-indent: -9999px;
+    z-index: 999;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+#footer.footer-custom {
+    bottom: 0!important;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .iframe-common {
+        overflow-x: scroll;
+    }
+}

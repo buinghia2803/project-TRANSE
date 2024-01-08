@@ -1,0 +1,156 @@
+/* common */
+.btn {
+    padding: 5px 2.5em !important;
+    margin-bottom: 5px;
+}
+/* end common */
+/* Start login */
+/* PC (1366~1920) */
+.login-page .input-password-login {
+    width: 420px;
+}
+
+.login-page .btn-clear {
+    font-size: 1.3em;
+}
+
+.login-page .error {
+    display: block;
+    margin-top: 5px;
+    color: #f50d0d;
+    font-size: 13px;
+}
+.mt_custom{
+    margin-top: 1px !important;
+}
+/* Tablet (768~1024px) */
+@media (max-width: 644px) {
+  .login-page dl.w10em dd {
+        margin: 8px;
+    }
+}
+
+/* SP (320~767px) */
+@media (max-width: 767px) {
+  .login-page .input-password-login,
+    .login-page .em30 {
+        margin-left: 3px;
+        width: 370px !important;
+    }
+
+    .login-page .btn-clear {
+        padding: 5px 2.5em !important;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .update_profile #info_nation_id,
+    .update_profile #contact_nation_id {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 320px) {
+  .login-page .input-password-login,
+  .login-page .em30 {
+        width: 300px !important;
+    }
+
+    .login-page .btn-clear {
+        padding: 5px 2.5em !important;
+        margin-bottom: 5px;
+    }
+}
+
+/* End login */
+/* start trademark infomation */
+.logo_trademark {
+    max-width: 120px;
+    height: 80px;
+}
+.trademark_owner {
+    display: flex;
+    flex-direction: column;
+}
+.distinction_name:not(:last-child)::after {
+    content: "、";
+}
+/* end trademark infomation */
+
+/* start create support first time */
+.error {
+    display: block;
+}
+
+.boxes {
+    position: relative;
+}
+
+.search-suggest {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    background: #fff;
+    box-shadow: 0 10px 25px -5px rgb(31 31 31 / 50%);
+    opacity: 1;
+    visibility: visible;
+    transition: .2s;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+}
+
+.item {
+    margin: 2px 10px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #ddd;
+}
+
+.no_item {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.search-suggest {
+    overflow: auto;
+    max-height: 200px;
+}
+
+.prod_code {
+    margin-top: 5px;
+}
+.prod_code:last-child {
+    margin-bottom: 5px;
+}
+
+.add_code {
+    border: none;
+    background: no-repeat;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.content {
+    text-align: center;
+}
+/* end create support first time */

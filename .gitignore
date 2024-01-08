@@ -1,0 +1,15 @@
+# Genaral
+.idea
+.env
+
+# Mysql
+docker/mysql/data
+docker/mysql/logs/*
+
+# Nginx
+docker/nginx/logs/*
+docker/nginx/ssl/*
+docker/nginx/conf.d/app.conf
+
+# MinIO
+docker/minio/data
